@@ -35,7 +35,7 @@ const RestaurantForm = () => {
       email,
     };
 
-    fetch("http://localhost:5000/data", {
+    fetch("https://marketing-server-pink.vercel.app/post/resto-data", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

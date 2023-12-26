@@ -5,7 +5,7 @@ const RestaurantTable = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/data")
+    fetch("https://marketing-server-pink.vercel.app/get/resto-data")
       .then((data) => data.json())
       .then((data) => {
         setData(data);
